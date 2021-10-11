@@ -14,26 +14,30 @@ if __name__ == '__main__':
     print(" 2 - Aletheia (API de dados financeiros)")
     print(" 3 - Fake API (API de dados aletórios )")
 
-    name_api = input('Escolha a API que deseja consumir')
+    name_api = input('Escolha a API que deseja consumir: ')
     print('---------')
 
-    if name_api == "1":
-      print("news_api")
-      api = Collect("news")
-      api.collect()
-    elif name_api == "2":
-      print("você escolheu Aletheia API")
-      api = Collect("aletheia")
-      api.collect()
-    elif name_api == "3":
-      print("você escolheu Fake API")
-      api = Collect("fake")
-      api.collect()
-    elif name_api == "0":
-      print("fechando o programa")
-      sys.exit()
-    else:
-      print("escolha inválida")
+    while True:
+      if name_api == "1":
+        print("news_api")
+        api = Collect("news")
+        api.collect()
+        break
+      elif name_api == "2":
+        print("você escolheu Aletheia API")
+        api = Collect("aletheia")
+        api.collect()
+        break
+      elif name_api == "3":
+        print("você escolheu Fake API")
+        api = Collect("fake")
+        api.collect()
+        break
+      elif name_api == "0":
+        print("fechando o programa")
+        break
+      else:
+        print("escolha inválida")
       
       
       
