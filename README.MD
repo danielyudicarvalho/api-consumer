@@ -1,5 +1,7 @@
 # Modo de usar
 
+* Acessar o [respositorio](https://github.com/danielyudicarvalho/api-consumer) do  código
+* Clonar o repositório com `git clone` para sua máquina local
 * Instale python3 e pip3 na sua máquina em [aqui](https://www.python.org/downloads/)
 * Use pip3 para instalar os seguintes pacotes: pandas e newsapi
 * Após a instalação das dependecias, abra o diretório do arquivo no terminal e digite `python3 main.py`
